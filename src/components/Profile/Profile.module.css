@@ -1,0 +1,24 @@
+.profile {
+  border: 1px solid;
+  border-color: rebeccapurple;
+  width: 400px;
+  margin: 40px;
+  padding: 20px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  display: block;
+  width: 200px;
+}
+
+.stats {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}

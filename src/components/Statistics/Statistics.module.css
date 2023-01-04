@@ -1,0 +1,20 @@
+.statistics {
+  border: 1px solid rebeccapurple;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.stat_list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  align-items: center;
+}
