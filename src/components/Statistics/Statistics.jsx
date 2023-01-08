@@ -9,10 +9,10 @@ export const Statistics = ({ title, stats }) => {
       {title && <h2 className={css.title}>{title.toUpperCase()}</h2>}
 
       <ul className={css.stat_list}>
-        {stats.map(stat => (
-          <li className={css.item} key={stat.id}>
-            <span className="label">{stat.label} </span>
-            <span className="percentage">{stat.percentage}</span>
+        {stats.map(({id, label, percentage}) => (
+          <li className={css.item} key={id}>
+            <span className="label">{label} </span>
+            <span className="percentage">{percentage}</span>
           </li>
         ))}
       </ul>
@@ -23,5 +23,12 @@ export const Statistics = ({ title, stats }) => {
 // proptypes
 Statistics.propTypes ={
   title: PropTypes.string,
-  stats: PropTypes.array.isRequired
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }
+    )
+  )
 }

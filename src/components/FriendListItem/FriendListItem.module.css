@@ -1,14 +1,4 @@
-.friend_list{
-
-}
-.item{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-
-/* .status_True{
+.status_True{
     display: flex;
     width: 15px;
     height: 15px;
@@ -22,4 +12,10 @@
     height: 15px;
     background-color: red;
     border-radius: 50%;
-} */
+}
+
+.item{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
